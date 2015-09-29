@@ -19,7 +19,7 @@ set(vid,'TriggerRepeat',Inf);
 triggerconfig(vid,'Manual');
 
 %Initialising Serial Communication
-ser = serial('COM5', 'BaudRate', 9600);
+ser = serial('COM5', 'BaudRate', 9600); %COM port value depends on your system
 fopen(ser);
 pause(10);
 start(vid);
